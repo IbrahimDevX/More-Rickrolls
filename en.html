@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <style>
+  #captchaContainer{
+    width: 100%;
+    height: 180%;
+    margin-bottom: -80%;
+    display: flex;
+    overflow: hidden;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index:100;
+    position: absolute;
+  }
+  .blocker {
+    width: 100%;
+    height: 120%;
+    margin-bottom: -20%;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 50;
+    position: absolute;
+  }
+  </style>
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <script src="https://hcaptcha.com/1/api.js?render=explicit" async defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tweetnacl/1.0.2/nacl.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.1/nacl-util.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/custom-protocol-detection@1.0.1/protocolcheck.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!--script src="https://www.google.com/recaptcha/api.js?render=6LcsDAEVAAAAAIxh8yAu268YbFL7BiX8LuhqdlTd"></script-->
+  <style></style>
+<!--script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://stretchsister.com/v2xjttoN5j3LfsKttI3VMTprMUSgot_dKKM4rQsp51h8nXrsT-A19JFAqf0cmOA21",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(c,e,o,t,n){function r(o,t){(function n(){try{return 0<(localStorage.getItem("v4ac1eiZr0")||"").split(",")[4]}catch(o){}return!1})()&&(t=c[e].pubads())&&t.setTargeting("admiral-engaged","true")}(n=c[e]=c[e]||{}).cmd=n.cmd||[],typeof n.pubads===o?r():typeof n.cmd.unshift===o?n.cmd.unshift(r):n.cmd.push(r)})(window,"googletag","function");</script-->
+<script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://stretchsister.com/v2zlufwjhJPOPzahTKPVosLWURDeNL2fBP4KFal55I2xeXaRtqoYDQyNfkL38pZVr",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(c,e,o,t,n){function r(o,t){(function n(){try{return 0<(localStorage.getItem("v4ac1eiZr0")||"").split(",")[4]}catch(o){}return!1})()&&(t=c[e].pubads())&&t.setTargeting("admiral-engaged","true")}(n=c[e]=c[e]||{}).cmd=n.cmd||[],typeof n.pubads===o?r():typeof n.cmd.unshift===o?n.cmd.unshift(r):n.cmd.push(r)})(window,"googletag","function");</script>
+  <link rel="stylesheet" href="https://newcp.net/static/fonts/fonts.css" media="all" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="google-site-verification" content="7SDU81jjttuSoN8lxj9rUV265par6NaICtumeryTRYQ" />
+  <link rel="shortcut icon" href="https://newcp.net/favicon-32x32.png" type="image/png" />
+  <link rel="canonical" href="https://play.newcp.net/en/" data-baseprotocol="https:" data-basehost="play.newcp.net" />
+  <meta name="description"
+    content="Welcome to New Club Penguin, a free, snowy, virtual world based on the original Club Penguin. Waddle around and meet new friends in a safe environment today!" />
+  <meta property="og:title" content="New Club Penguin" />
+  <meta property="og:description"
+    content="Welcome to New Club Penguin, a free, snowy, virtual world based on the original Club Penguin. Waddle around and meet new friends in a safe environment today!" />
+  <meta property="og:type" content="website" data-react-helmet="true" />
+  <meta property="og:image" content="https://play.newcp.net/en/assets/newcplogin1.png" />
+  <title>Play Now! | NewCP</title>
+  <link rel="alternate" type="application/rss+xml" title="Club Penguin - What's New" href="https://www.clubpenguin.com/whats-new/feed/all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_cawUUwTb6FTEpTC7UYZQwdcaTVHlWORZjZlFNt1mXNc.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_5FxwTVZs9EtbjcExytQ5ndQqt-X7PFwK3mD2o7QXYH0.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_Ithmjuj4ePlnkLrL_GIuS3TsGEoCIelrKOCUPBOfhJ8.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_6sGcdaud_kk5LWaaq4lZk2ZLw8uneQM4wYx5rg2QgOM.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_9Heh1u--mIfOomnfZC-JIjM3PxmkhjTogDetvyuVnMU.css" media="all" />
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_5AoaSUlnRluwt_SO1GRzTQdCdcJf0Aw-MqGesNvp_6Y.css" media="all" />
+  <script>
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    var MAIN_WIDGET = null;
+    function completeRecaptcha() {
+      let cont = document.getElementById("captchaContainer");
+      let block = document.getElementById("blocker");
+      cont.style.visibility = "hidden";
+      block.style.visibility = "hidden";
+      hcaptcha.reset(MAIN_WIDGET);
+    }
+    function successRequest(response) {
+      console.log("here")
+      try {
+        document.getElementById("cp_flash").sendResponse(response);
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    function showRecaptcha() {
+      /*let cont = document.getElementById("captchaContainer");
+      let block = document.getElementById("blocker");
+      cont.style.visibility = "visible";
+      block.style.visibility = "visible";
+      if (MAIN_WIDGET != null) {
+        hcaptcha.reset(MAIN_WIDGET);
+      } else {
+        MAIN_WIDGET = hcaptcha.render(cont, { "sitekey": "96bbd7c4-03b9-4b55-ae08-4366a78b251c", "theme": "dark", "callback": handleCaptchaSuccess, "expired-callback": handleRedoCaptcha, "data-error-callback": handleCaptchaError });
+      }*/
+      cpdom.handleCaptchaSuccessResponse("all by myself x2");
+    }
+    function getToken() {
+      /*grecaptcha.ready(function () {
+        grecaptcha
+          .execute("6LcsDAEVAAAAAIxh8yAu268YbFL7BiX8LuhqdlTd", {
+            action: "submit",
+          })
+          .then(function (token) {
+            var xhttp = new XMLHttpRequest();
+            var params = `recaptcha_response=${token}`;
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+                let data = JSON.parse(this.responseText);
+                console.log(data);
+                if (!data["ok"]) {
+                  return window.location.replace(
+                    "https://play.newcp.net/en/#/login"
+                  );
+                }
+                console.log(data["token"]);
+                localStorage.setItem("token", data["token"]);
+              }
+            };
+            xhttp.open("POST", "https://auth.newcp.net/", true);
+            xhttp.setRequestHeader(
+              "Content-type",
+              "application/x-www-form-urlencoded"
+            );
+            xhttp.send(params);
+          });
+      });*/
+    }
+    function checkValid() {
+      let token = localStorage.getItem("token");
+      if (token == null) {
+        return getToken();
+      }
+      var xhttp = new XMLHttpRequest();
+      var params = `token=${token}`;
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this.responseText);
+          let data = JSON.parse(this.responseText);
+          if (!data["ok"]) {
+            return getToken();
+          }
+        }
+      };
+
+      xhttp.open("POST", "https://auth.newcp.net/check", true);
+      xhttp.setRequestHeader(
+        "Content-type",
+        "application/x-www-form-urlencoded"
+      );
+      xhttp.send(params);
+    }
+    function sendVerification(e) {
+      checkValid();
+    }
+    let agreed = getCookie('ncp-agr');
+    if (!agreed) {
+      window.location.replace("https://newcp.net");
+    }
+    if (window.location.hash.includes("login")) {
+      checkValid();
+    }
+
+    function handleCaptchaSuccess(resp) {
+      console.info("Captcha:" + resp);
+      var cpdom = document.getElementById("cp_flash");
+      cpdom.handleCaptchaSuccessResponse(resp);
+    }
+
+    function handleRedoCaptcha(resp) {
+      console.log(resp);
+      alert("Captcha expired. Please redo captcha and try again.");
+      hcaptcha.reset(MAIN_WIDGET);
+    }
+
+    function handleCaptchaError(resp) {
+      console.log(resp);
+      alert("Captcha failed. Please try again.");
+      location.reload();
+    }
+
+    function handleCaptchaLoginProcess() {
+      var cpdom = document.getElementById("cp_flash");
+
+      var capVerifKey = localStorage.getItem("__newcp__captchaKey");
+      if (capVerifKey == null) {
+        cpdom.handleCaptchaSuccessResponse("all by myself"); //showRecaptcha();
+      } else {
+        cpdom.verifyCaptchaUsingKey(capVerifKey);
+      }
+    }
+function isElectron() {
+    // Renderer process
+    if (typeof window !== 'undefined' && typeof window.process === 'object' && window.process.type === 'renderer') {
+        return true;
+    }
+
+    // Main process
+    if (typeof process !== 'undefined' && typeof process.versions === 'object' && !!process.versions.electron) {
+        return true;
+    }
+
+    // Detect the user agent when the `nodeIntegration` option is set to true
+    if (typeof navigator === 'object' && typeof navigator.userAgent === 'string' && navigator.userAgent.indexOf('Electron') >= 0) {
+        return true;
+    }
+
+    return false;
+}
+    function handle2FAInput() {
+      var cpdom = document.getElementById("cp_flash");
+//      var auth_code = prompt("You have 2FA (Two Factor Authentication) enabled. You need to verify 2FA now by entering the code generated by your auth app.");
+	var auth_code;
+	      if (!isElectron())
+        auth_code = prompt("You have 2FA (Two Factor Authentication) enabled. Enter 2FA Code");
+	else {
+        Swal.fire({
+                  title: 'Enter 2FA Code',
+                  input: 'number',
+                          allowOutsideClick: () => false
+                }).then((result) => {
+                  cpdom.verify2FACode(result.value);
+                });
+        return;
+	}
+      cpdom.verify2FACode(auth_code);
+    }
+
+    const newNonce = () => nacl.randomBytes(nacl.secretbox.nonceLength);
+    const generateKey = () => {
+      a = nacl.box.keyPair();
+      return [nacl.util.encodeBase64(a.publicKey), nacl.util.encodeBase64(a.secretKey)];
+    }
+
+  </script>
+  <!--[if lte IE 9]>
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="/sites/content.newcp.pw/themes/club_penguin/css/ie-lte-9.css?om3jak"
+        media="all"
+      />
+    <![endif]-->
+
+  <!--[if (lt IE 9)&(!IEMobile)]>
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="/sites/default/files/css/css__vb7XZfXeuRXjYmfY6lNTg-jy-9kxy0K07AXHAQnnDQ.css"
+        media="all"
+      />
+    <![endif]-->
+
+  <!--[if gte IE 9]><!-->
+  <link type="text/css" rel="stylesheet"
+    href="/sites/default/files/css/css_lpn3saPwnh0DOdveZjtLNqWuVLzzK8A98rurOUMUo0s.css" media="all" />
+  <!--<![endif]-->
+
+  <!--[if lt IE 9
+      ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
+    ><![endif]-->
+</head>
+
+<body class="html not-front not-logged-in page-play full-page-flow i18n-en context-play snowball">
+  <div class="blocker" id="blocker"></div>
+  <div id="captchaContainer">
+  </div>
+  <div class="region region-page-top" id="region-page-top">
+    <div class="region-inner region-page-top-inner"></div>
+  </div>
+  <div class="page clearfix" id="page">
+    <header id="section-header" class="section section-header">
+      <div id="affiliate-header" style="display: none;">
+        <a id="affiliate-header-link" href="http://www.clubpenguin.com/?home=return"><img
+            src="/sites/content.newcp.pw/themes/snowball/img/affiliate-cp-logo.png" /></a>
+      </div>
+      <nav>
+        <a id="home-link" href="https://newcp.net/">Home</a>
+        <ul class="mainnav" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+          <!-- <li itemprop="name"><a itemprop="url" href="https://secure.newcp.net/" class="cpmenu">Secure</a></li> -->
+          <li itemprop="name">
+            <a itemprop="url" href="https://newcp.net/blog" class="cpmenu">What's New</a>
+          </li>
+          <li itemprop="name">
+            <a itemprop="url" href="https://newcp.net/en/register" class="cpmenu">Register</a>
+          </li>
+          <li itemprop="name">
+            <a itemprop="url" href="https://newcp.net/legal/" class="cpmenu">Terms</a>
+          </li>
+          <li itemprop="name">
+            <a itemprop="url" href="https://newcp.net/privacy/" class="cpmenu">Privacy</a>
+          </li>
+          <li itemprop="name">
+            <a itemprop="url" href="https://newcp.net/rules/" class="cpmenu">Rules</a>
+          </li>
+          <!-- <li itemprop="name">
+              <a itemprop="url" href="https://help.newcp.pw/" class="cpmenu"
+                >Help</a
+              >
+            </li> -->
+        </ul>
+        <div id="language-select">
+          <div>
+            <a id="language-select-link" class="top-level" href="#" tabindex="1">Language Select<span
+                class="indicator"></span></a>
+            <div id="bottom-languages">
+              <a class="first" href="/">ENGLISH</a>
+              <a href="/es/">ESPA&Ntilde;OL</a>
+              <a class="last" href="/pt/">PORTUGU&Ecirc;S</a>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar navbar-right">
+          <li>
+            <a id="logout-link" class="logout" href="https://discord.gg/clubpenguin"><img
+                src="/sites/content.newcp.pw/themes/snowball/img/icon-logout.png" />
+              Discord</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--center><b style='text-align: center'> Help us test Card Jitsu Snow, and get an exclusive beta hat by clicking <a href='https://beta.newcp.net/' style='color: lightblue;'>here</a>. This will only be available for a limited time.</b></center-->
+    <main id="content">
+      <section id="billboards" style="width: 65%; height: auto; min-width: 930px;">
+        <div id="membership-buttons" style="top: 0; margin-top: calc((100% * 0.5107) - 65px);">
+          <a class="membership-button" href="https://discord.gg/clubpenguin">Join Our Discord</a>
+        </div>
+        <img src="/assets/newcplogin1.png" width="100%" height="auto" style="width: 100%; height: auto;" />
+      </section>
+      <section id="actions" style="width: 65%; min-width: 930px;">
+        <img class="cp-logo" src="/assets/sites/default/themes/snowball/img/newcp_logo2.png"
+          style="width: 15%; padding-top: calc((100px - (15% * 0.4537)) / 2);" />
+        <div id="create">
+          <a id="penguin-create" class="action-button cp-button-blue" href="https://newcp.net/register">Create a
+            Penguin</a>
+        </div>
+        <div id="login">
+          <a id="penguin-login" onclick="sendVerification(this)" class="action-button cp-button-blue cp-mobile-pop"
+            href="/en/#/login">Login</a>
+        </div>
+      </section>
+<center>
+<!--
+ad goes here
+-->
+    </center>
+    </main>
+    <br>
+<center>
+<!--
+ad goes here
+-->
+    </center>
+    <footer id="section-footer" class="section section-footer" style="max-width: 500px;">
+      <p id="name">
+        New Club Penguin is a recreation and/or fan-made game and is in no way
+        affiliated to Disney's Club Penguin, The Walt Disney Company and/or
+        Disney Games.
+      </p>
+      <p id="footer-updated">
+        <a target="_blank" href="https://newcp.net/legal/">Terms of Use</a>
+        &nbsp;| &nbsp;
+        <a target="_blank" href="https://newcp.net/privacy/">Privacy Policy</a>
+        &nbsp;| &nbsp;
+        <a target="_blank" href="https://newcp.net/rules/">Rules</a> &nbsp;|
+        &nbsp;
+        <!-- <a target="_blank" href="https://help.newcp.pw/">Help</a> &nbsp;|
+          &nbsp; -->
+        <a href="https://beta.newcp.net/en"  style="color:#044b9e;">Beta</a>
+      </p>
+      <p id="footer-legal"></p>
+    </footer>
+  </div>
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Club Penguin",
+        "url": "/"
+      }
+    </script>
+  <div class="region region-page-bottom" id="region-page-bottom">
+    <div class="region-inner region-page-bottom-inner"></div>
+  </div>
+  <script type="text/javascript"
+    src="/sites/default/files/js/js_jpJjaUC0z8JMIyav5oQrYykDRUb64rpaUDpB4Y9aklU.js"></script>
+  <script type="text/javascript"
+    src="/sites/default/files/js/js_32OCC7TUXcQ26myiC_PKkpvoU5ltaaDe8niVutpKtrA.js"></script>
+  <script type="text/javascript"
+    src="/sites/default/files/js/js_WDaYo-25YBhRo3AvoKzxvgFzAfWWLPZ9T-71faUlHj8.js"></script>
+  <script type="text/javascript">
+      <!--//--><![CDATA[//><!--
+        window.CKEDITOR_BASEPATH = '/sites/all/libraries/ckeditor/'
+      //--><!]]>
+  </script>
+  <script type="text/javascript"
+    src="/sites/default/files/js/js_HbFTUN2pKM9AIYs88RAyetbRRbaBp_PaIXfgtECrvTU.js?cache=2"></script>
+  <script type="text/javascript"
+    src="/sites/default/files/js/js_o2ds7CQye0F4k9GwyDZAYk9dJY5NEBiGnH_iynlnt0s.js"></script>
+  <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+      var media = "https://newcp1.nyc3.cdn.digitaloceanspaces.com/board/media/";
+    var mpassets = "https://newcp1.nyc3.cdn.digitaloceanspaces.com/content/play/mpassets/";
+    var DOWNLOAD_TEXT = {
+  		'loading_txt': 'Loading...',
+  		'download_app_header': 'Download the NewCP App to play New Club Penguin!',
+  		'launch_app_header': 'Launch the NewCP App to play New Club Penguin!',
+  		'download_app_body': 'You need to download the NewCP App to play. If you already have the app, press launch.',
+  		'launch_app_body': 'You have the NewCP App installed. If the app doesn\'t open, click on the button below to launch the App to play NewCP.',
+  		'download_btn': 'Download',
+  		'launch_btn': 'Launch NewCP App',
+  		'play_btn': 'Play Normally'
+	  }
+    jQuery.extend(Drupal.settings, { "basePath": "\/", "pathPrefix": "", "ajaxPageState": { "theme": "snowball", "theme_token": "smnCtNiGX_NXuHkB87GHkuCfvP1nf40hmRcZ5EYgLaA", "js": { "sites\/content.newcp.pw\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js": 1, "misc\/jquery.once.js": 1, "misc\/drupal.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1, "sites\/content.newcp.pw\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/colorbox\/js\/colorbox.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/colorbox\/styles\/default\/colorbox_default_style.js": 1, "sites\/content.newcp.pw\/modules\/contrib\/colorbox\/js\/colorbox_inline.js": 1, "sites\/content.newcp.pw\/modules\/custom\/selectmenu\/js\/jquery.ui.selectmenu\/jquery.ui.selectmenu.js": 1, "sites\/content.newcp.pw\/modules\/custom\/selectmenu\/js\/selectmenu.js": 1, "sites\/content.newcp.pw\/modules\/custom\/views_slideshow\/js\/views_slideshow.js": 1, "0": 1, "sites\/content.newcp.pw\/libraries\/purl-master\/purl.js": 1, "sites\/content.newcp.pw\/libraries\/swfobject\/swfobject.js": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/js\/common\/cp.utils.modal.js": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/js\/common\/lib\/cookies.js": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/js\/common\/agegate_popup.js": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/js\/common\/cp.dol.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/external.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/error.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/banner.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/disney.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/flashclient.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/upgradeflashclient.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/mpclient.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/friendsclient.js": 1, "sites\/content.newcp.pw\/themes\/snowball\/js\/snowball.js": 1, "sites\/content.newcp.pw\/themes\/omega\/omega\/js\/jquery.formalize.js": 1 }, "css": { "modules\/system\/system.base.css": 1, "modules\/system\/system.menus.css": 1, "modules\/system\/system.messages.css": 1, "modules\/system\/system.theme.css": 1, "misc\/ui\/jquery.ui.core.css": 1, "misc\/ui\/jquery.ui.theme.css": 1, "modules\/comment\/comment.css": 1, "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1, "modules\/field\/theme\/field.css": 1, "modules\/node\/node.css": 1, "modules\/user\/user.css": 1, "sites\/all\/modules\/contrib\/views\/css\/views.css": 1, "sites\/content.newcp.pw\/modules\/contrib\/colorbox\/styles\/default\/colorbox_default_style.css": 1, "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1, "sites\/all\/modules\/contrib\/panels\/css\/panels.css": 1, "sites\/content.newcp.pw\/modules\/custom\/selectmenu\/js\/jquery.ui.selectmenu\/jquery.ui.selectmenu.css": 1, "sites\/content.newcp.pw\/modules\/custom\/views_slideshow\/views_slideshow.css": 1, "sites\/content.newcp.pw\/modules\/custom\/cp_helper\/css\/modal.css": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/css\/font-face-play.css": 1, "sites\/content.newcp.pw\/themes\/omega\/alpha\/css\/alpha-reset.css": 1, "sites\/content.newcp.pw\/themes\/omega\/alpha\/css\/alpha-mobile.css": 1, "sites\/content.newcp.pw\/themes\/omega\/alpha\/css\/alpha-alpha.css": 1, "sites\/content.newcp.pw\/themes\/omega\/omega\/css\/formalize.css": 1, "sites\/content.newcp.pw\/themes\/snowball\/css\/global.css": 1, "sites\/content.newcp.pw\/themes\/club_penguin\/css\/ie-lte-9.css": 1, "ie::normal::sites\/content.newcp.pw\/themes\/omega\/alpha\/css\/grid\/alpha_fluid\/normal\/alpha-fluid-normal-12.css": 1, "sites\/content.newcp.pw\/themes\/omega\/alpha\/css\/grid\/alpha_fluid\/normal\/alpha-fluid-normal-12.css": 1 } }, "colorbox": { "opacity": "0.85", "current": "{current} of {total}", "previous": "\u00ab Prev", "next": "Next \u00bb", "close": "Close", "maxWidth": "100%", "maxHeight": "100%", "fixed": true, "__drupal_alter_by_ref": ["default"] }, "cp_mobile_interstitial": { "ios": { "title": "Club Penguin is no longer available. Visit us at Club Penguin Island for more information.", "content": "By clicking below you are leaving Club Penguin and are about to go to www.clubpenguinisland.com", "action_link": "https:\/\/www.clubpenguinisland.com\/info", "buttons": { "cancel": "Cancel", "action": "Learn More" }, "class": "cp-mobile-interstitial ios-interstitial" }, "android": { "title": "Club Penguin is no longer available. Visit the Google Play store download information for Club Penguin Island.", "content": "By clicking below you are about to go to the Club Penguin Island app at play.google.com where a different Terms of Use and Privacy Policy will apply.", "action_link": "\/cpi-android-download", "buttons": { "cancel": "Cancel", "action": "Download" }, "class": "cp-mobile-interstitial android-interstitial" } }, "jcarousel": { "ajaxPath": "\/jcarousel\/ajax\/views" }, "selectmenu": { "form_id_exceptions": ["comment-form", "page-changer"], "ignore_system_settings_forms": 1, "ignore_overlay_forms": 1, "ignore_node_add_forms": 1, "disable_for_admin_theme": 1, "options": { "positionOptions": { "collision": "none" } } }, "snowball_banner": { "membershipDaysRemaining": "You have \u003Cstrong\u003E%daysRemaining% Days\u003C\/strong\u003E left in your membership", "membershipLastDay": "Today is the \u003Cstrong\u003Elast day\u003C\/strong\u003E of your membership.", "membershipAbout": "About Membership", "preActivationDaysRemaining": "You can waddle around without activating for: \u003Cstrong\u003E%daysRemaining% Days\u003C\/strong\u003E", "preActivationHoursRemaining": "You can waddle around without activating for: \u003Cstrong\u003E%hoursRemaining% Hours\u003C\/strong\u003E", "preActivationLastHour": "You have less than one hour to activate your account. Unactivated accounts will be deleted.", "preActivationAbout": "About Activation" }, "snowball_errors": { "general": { "code": "general", "header": "", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003ESorry! There was a problem loading Club Penguin.\u003C\/span\u003E\u003Cspan\u003EPlease try refreshing your browser, or contact support if the problem continues.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [{ "label": "OK", "href": "\/#", "id": "ok-button", "type": "text" }] }, "flashUpgradeRequired": { "code": "flashUpgradeRequired", "header": "Download the latest Adobe Flash Player to play Club Penguin!", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003EAsk your parents for help before you download.\u003C\/span\u003E\u003Cspan\u003EVisit our \u003Ca href=\u0022http:\/\/www.clubpenguin.com\/help\/help-topics\/technical-help\u0022\u003EFlash Player FAQ\u003C\/a\u003E to find out more about this update.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [{ "label": "\/sites\/content.newcp.pw\/themes\/snowball\/img\/en\/ignore-button.png", "href": "\/#\/login", "id": "ignore-button", "type": "img" }, { "label": "\/sites\/content.newcp.pw\/themes\/snowball\/img\/en\/upgrade-button.png", "href": "\/#\/upgrade", "id": "upgrade-button", "type": "img" }] }, "flashInstallRequired": { "code": "flashInstallRequired", "header": "Flash Player Required ", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003EOops! Club Penguin needs the latest Flash player. Ask a parent to download it from adobe.com.\u003C\/span\u003E\u003Cspan\u003EVisit this \u003Ca href=\u0022https:\/\/get.adobe.com\/flashplayer\/\u0022\u003EFlash Player FAQ\u003C\/a\u003E to find out more.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [] }, "flashInstallRequiredChrome": { "code": "flashInstallRequiredChrome", "header": "Flash Player Required", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003EOops! To play Club Penguin in this browser, please ask a parent to enable the latest Flash player.\u003C\/span\u003E\u003Cspan\u003EVisit this \u003Ca href=\u0022https:\/\/get.adobe.com\/flashplayer\/\u0022\u003EFlash Player FAQ\u003C\/a\u003E to find out how.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [] }, "flashMinimumRequired": { "code": "flashMinimumRequired", "header": "Flash Player Required ", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003EOops! Club Penguin needs the latest Flash player. Ask a parent to download it from adobe.com.\u003C\/span\u003E\u003Cspan\u003EVisit this \u003Ca href=\u0022https:\/\/get.adobe.com\/flashplayer\/\u0022\u003EFlash Player FAQ\u003C\/a\u003E to find out more.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [{ "label": "\/sites\/content.newcp.pw\/themes\/snowball\/img\/en\/upgrade-button.png", "href": "\/#\/upgrade", "id": "upgrade-button", "type": "img" }] }, "unknownFlashError": { "code": "unknownFlashError", "header": "", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003ESorry, something went wrong with Adobe Flash Player.\u003C\/span\u003E\u003Cspan\u003ETry logging in again.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [] }, "cjSnowFlashUpgradeRequired": { "code": "cjSnowFlashUpgradeRequired", "header": "", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003EOops! You need the latest Flash Player to play Card-Jitsu Snow.\u003C\/span\u003E\u003Cspan\u003EAsk your parent to download it from adobe.com.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [{ "label": "OK", "href": "\/#", "id": "ok-button", "type": "text" }] }, "cjSnowSnfGenerator": { "code": "cjSnowSnfGenerator", "header": "", "headerTag": "\u003Ch1\u003E", "message": "\u003Cspan\u003ESorry! There was a problem loading Card-Jitsu Snow.\u003C\/span\u003E\u003Cspan\u003EPlease try again, or contact support if the problem continues.\u003C\/span\u003E", "messageTag": "\u003Cdiv\u003E", "links": [{ "label": "OK", "href": "\/#", "id": "ok-button", "type": "text" }] } }, "snowball": { "language": "en", "langPath": "\/en\/", "countryCode": "US", "visitorType": "", "affStyle": "0", "promotionString": "1", "cssJsQueryString": "om3jak" }, "flash_game_settings": { "recommendedSwfVersion": "12.0.0.44", "minimumSwfVersion": "10.1", "loadSwf": media + "play\/v2\/client\/club_penguin.swf?clientVersion=21640", "baseUrl": media + "play\/", "clientDirectory": media + "play\/v2\/client\/", "contentDirectory": media + "play\/v2\/content\/", "gamesDirectory": media + "play\/v2\/games\/", "connectionID": "cp68294", "lang": "en", "a": null, "nau": "", "nal": "", "nas": "", "nad": "", "cacheVersion": "34", "clientVersion": "21715", "configVersion": "d14", "contentVersion": "d33", "minigameVersion": "13187", "swfAddressUrl": "https://newcp1.nyc3.cdn.digitaloceanspaces.com/content/play/sites/content.newcp.pw/libraries/swfaddress/newcp_address.js" }, "mp_game_settings":{"minimumSwfVersion":"11.3","loadSwf":mpassets+"playclients\/r3662\/flash_client_base_fp11.swf","product":"cjsnow","baseAssetUrl":mpassets,"assetServer":mpassets,"assetSeed":mpassets,"manifestUrl":"\u003Cbase_asset_url\u003E\/publishdata\/r5309\/manifest\/manifest_tokenized.json","wns":"https://play.newcp.net/mpassets","lang":"en_US","SWF_ERRORS":mpassets + "minigames\/cjsnow\/en_US\/deploy\/swf\/ui\/assets\/ErrorMessages.swf","SWF_LOADER":mpassets + "minigames\/cjsnow\/en_US\/deploy\/swf\/ui\/assets\/cardjitsu_snowbetapreloader.swf","PLACE":"snow_lobby","affLangDir":"\/en","productName":"cjsnow"}, "misc_game_settings": { "affLang": "en", "expressInstallSwfUrl": "\/sites\/content.newcp.pw\/themes\/snowball\/swf\/expressInstall.swf", "devMode": "DEBUG_MODE", "promotionString": null, "nau": "", "nal": "", "nas": "", "nad": "", "phraseChatUrl": media + "social\/autocomplete\/v2\/search\/", "friendsUrl": "https://newcp1.nyc3.cdn.digitaloceanspaces.com/content/play/js/andjandja.js?v=1.3.57", "createUrl": "\/en\/penguin\/create", "nameResubmissionUrl": "\/en\/penguin\/update-username", "sendActivationMailUrl": "\/en\/penguin\/resend-activation-email" }, "cp_tracking": { "section": "play", "pageName": "home_big_screen", "protocolBase": "http", "langPath": "en", "qs": "", "ctoAccount": "clubpenguin", "ctoCategory": "dgame", "ctoSite": "clp", "ctoProperty": "clp" } });
+      //--><!]]>
+  </script>
+</body>
+
+</html>
